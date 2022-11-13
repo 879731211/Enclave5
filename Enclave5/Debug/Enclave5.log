@@ -1,0 +1,19 @@
+﻿  Creating proxy/bridge routines
+  Enclave5.cpp
+  Enclave5_t.c
+    正在创建库 C:\Users\87973\source\repos\Enclave5\Debug\Enclave5.lib 和对象 C:\Users\87973\source\repos\Enclave5\Debug\Enclave5.exp
+  Enclave5.vcxproj -> C:\Users\87973\source\repos\Enclave5\Debug\Enclave5.dll
+  sign the enclave
+  The required memory is 0x158000.
+  <EnclaveConfiguration>
+      <ProdID>0</ProdID>
+      <ISVSVN>0</ISVSVN>
+      <StackMaxSize>0x40000</StackMaxSize>
+      <HeapMaxSize>0x100000</HeapMaxSize>
+      <TCSNum>1</TCSNum>
+      <TCSPolicy>1</TCSPolicy>
+      <DisableDebug>0</DisableDebug>
+      <MiscSelect>0</MiscSelect>
+      <MiscMask>0xFFFFFFFF</MiscMask>
+  </EnclaveConfiguration>
+  Succeed.

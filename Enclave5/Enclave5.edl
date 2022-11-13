@@ -1,0 +1,35 @@
+enclave {
+    from "sgx_tstdc.edl" import *;
+    from "sgx_tsgxssl.edl" import *;
+    include "openssl/ec.h"
+    include "openssl/bn.h"
+    include "openssl/ecdsa.h"
+
+    include "stdio.h"
+ 
+    trusted {
+        /* define ECALLs here. */
+         public void foo([out,size=len] char* buf,size_t len); 
+   
+         public void TA_gen_prikey(); 
+         
+
+         public sgx_status_t unseal_data([in, size=data_size] const uint8_t *sealed_blob, size_t data_size,[out,size=len] char* TA_prikey,size_t len);
+
+         public sgx_status_t TA_tracing([in, size=data_size] const uint8_t *sealed_blob, size_t data_size, [in ,size=idl_c_size] char* id1_c,size_t idl_c_size,[in ,size=Tracing_RID_size] char* Tracing_RID,size_t Tracing_RID_size,[in ,size=Tracing_T_size] char* Tracing_T,size_t Tracing_T_size); 
+    };
+
+    untrusted {
+
+    include "openssl/ec.h"
+    include "openssl/bn.h"
+    include "openssl/ecdsa.h"
+
+        /* define OCALLs here. */
+        void uprint([in, string] const char *str);
+
+        void TA_store_key([in,out,size=len]  uint8_t *buf,size_t len);
+        void TA_store_pubkey([in,out,size=len] char* key,size_t len);
+        void TA_tracing_log([in,out,size=len] char* log,size_t len);
+    };
+};

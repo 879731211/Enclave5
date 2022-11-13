@@ -1,0 +1,18 @@
+﻿  Enclave5.cpp
+C:\Users\87973\source\repos\Enclave5\Enclave5\Enclave5.cpp(83,7): warning C4101: “s2”: 未引用的局部变量
+    正在创建库 C:\Users\87973\source\repos\Enclave5\x64\Debug\Enclave5.lib 和对象 C:\Users\87973\source\repos\Enclave5\x64\Debug\Enclave5.exp
+  Enclave5.vcxproj -> C:\Users\87973\source\repos\Enclave5\x64\Debug\Enclave5.dll
+  sign the enclave
+  The required memory is 0x492000.
+  Succeed.
+  <EnclaveConfiguration>
+      <ProdID>0</ProdID>
+      <ISVSVN>0</ISVSVN>
+      <StackMaxSize>0x40000</StackMaxSize>
+      <HeapMaxSize>0x100000</HeapMaxSize>
+      <TCSNum>1</TCSNum>
+      <TCSPolicy>1</TCSPolicy>
+      <DisableDebug>0</DisableDebug>
+      <MiscSelect>0</MiscSelect>
+      <MiscMask>0xFFFFFFFF</MiscMask>
+  </EnclaveConfiguration>
